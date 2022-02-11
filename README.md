@@ -14,3 +14,4 @@ I2C device found at address 0x78  ! 120 (Parking 7) -
 
 I2C device found at address 0x79  ! 121 (Parking 8) -
 
+![74hc595_dualregisters_bb](https://user-images.githubusercontent.com/84501094/153572097-591f2904-f299-4515-a3f7-48ff193754e1.png)
