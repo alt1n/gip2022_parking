@@ -7,7 +7,7 @@
         echo "Verbinding mislukt:";
         echo mysqli_connect_error();
     }
-    if (isset($_GET['par1']) and isset($_GET['par2']) and isset($_GET['par3']) and isset($_GET['par4']) and isset($_GET['par5'])  and isset($_GET['par6']) and isset($_GET['par7']) and isset($_GET['par8'])){
+    if (isset($_GET['par1']) and isset($_GET['par2']) and isset($_GET['par3']) and isset($_GET['par4']) and isset($_GET['par5']) and isset($_GET['par6']) and isset($_GET['par7']) and isset($_GET['par8'])  ){
         $Parking1 = $_GET['par1'];
         
         if ($Parking1 == "0"){
