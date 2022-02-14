@@ -1,3 +1,4 @@
+![Naamloos](https://user-images.githubusercontent.com/84501094/153870221-a7eb0cac-e354-44ad-acde-ca1f5e9f2c48.png)
 
 
 ![74hc595_dualregisters_bb](https://user-images.githubusercontent.com/84501094/153572097-591f2904-f299-4515-a3f7-48ff193754e1.png)
