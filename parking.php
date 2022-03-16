@@ -7,7 +7,7 @@
         echo "Verbinding mislukt:";
         echo mysqli_connect_error();
     }
-    if (isset($_GET['par1']) and isset($_GET['par2']) and isset($_GET['par3']) and isset($_GET['par4']) and isset($_GET['par5']) and isset($_GET['par6']) and isset($_GET['par7']) and isset($_GET['par8'])  ){
+    if (isset($_GET['par1']) and isset($_GET['par2']) and isset($_GET['par3']) and isset($_GET['par4']) and isset($_GET['par5']) and isset($_GET['par6'])){
         $Parking1 = $_GET['par1'];
         
         if ($Parking1 == "0"){
@@ -143,52 +143,6 @@
             $query11 = 'UPDATE `parkingdata` SET `Status`="1" WHERE `Naam`="P6"';
 
             if(mysqli_query($link, $query11)){
-                
-            }else{
-                echo "Fout bij het toevoegen:".mysqli_error($link);
-            }
-        }
-        
-        $Parking7 = $_GET['par7'];
-
-        if ($Parking7 == "0"){
-            echo "Parking 7: 0";
-            $query12 = 'UPDATE `parkingdata` SET `Status`="0" WHERE `Naam`="P7"';
-
-            if(mysqli_query($link, $query12)){
-                
-            }else{
-                echo "Fout bij het toevoegen:".mysqli_error($link);
-            }
-            
-        }else{
-            echo "Parking 7: 1";
-            $query13 = 'UPDATE `parkingdata` SET `Status`="1" WHERE `Naam`="P7"';
-
-            if(mysqli_query($link, $query13)){
-                
-            }else{
-                echo "Fout bij het toevoegen:".mysqli_error($link);
-            }
-        }
-
-        $Parking8 = $_GET['par8'];
-
-        if ($Parking8 == "0"){
-            echo "Parking 8: 0";
-            $query14 = 'UPDATE `parkingdata` SET `Status`="0" WHERE `Naam`="P8"';
-
-            if(mysqli_query($link, $query14)){
-                
-            }else{
-                echo "Fout bij het toevoegen:".mysqli_error($link);
-            }
-            
-        }else{
-            echo "Parking 8: 1";
-            $query15 = 'UPDATE `parkingdata` SET `Status`="1" WHERE `Naam`="P8"';
-
-            if(mysqli_query($link, $query15)){
                 
             }else{
                 echo "Fout bij het toevoegen:".mysqli_error($link);
