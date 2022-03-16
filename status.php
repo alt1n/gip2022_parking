@@ -39,7 +39,7 @@
 		echo "Fout bij het toevoegen:".mysqli_error($link);
 	}
 
-    $query = 'SELECT `Naam`, `Status` FROM `parkingdata` WHERE `Naam` = "P2"';
+    $query = 'SELECT `Naam`, `Status` FROM `parkingdata` WHERE `Naam` = "P4"';
 	$result = mysqli_query($link, $query);
     $row = mysqli_fetch_assoc($result);
     echo "<td>";
@@ -58,7 +58,7 @@
 		echo "Fout bij het toevoegen:".mysqli_error($link);
 	}
 
-    $query = 'SELECT `Naam`, `Status` FROM `parkingdata` WHERE `Naam` = "P3"';
+    $query = 'SELECT `Naam`, `Status` FROM `parkingdata` WHERE `Naam` = "P2"';
 	$result = mysqli_query($link, $query);
     $row = mysqli_fetch_assoc($result);
     echo "<td>";
@@ -76,7 +76,7 @@
 		echo "Fout bij het toevoegen:".mysqli_error($link);
 	}
 
-    $query = 'SELECT `Naam`, `Status` FROM `parkingdata` WHERE `Naam` = "P4"';
+    $query = 'SELECT `Naam`, `Status` FROM `parkingdata` WHERE `Naam` = "P5"';
 	$result = mysqli_query($link, $query);
     $row = mysqli_fetch_assoc($result);
     echo "<td>";
@@ -96,7 +96,7 @@
 		echo "Fout bij het toevoegen:".mysqli_error($link);
 	}
 
-    $query = 'SELECT `Naam`, `Status` FROM `parkingdata` WHERE `Naam` = "P5"';
+    $query = 'SELECT `Naam`, `Status` FROM `parkingdata` WHERE `Naam` = "P3"';
 	$result = mysqli_query($link, $query);
     $row = mysqli_fetch_assoc($result);
     echo "<td>";
