@@ -3,6 +3,16 @@
 #include <HTTPClient.h>
 #include <WiFiClient.h>
 
+#include <ESP32Servo.h>
+#include <ESP32Tone.h>
+#include <ESP32PWM.h>
+
+Servo Servo1;
+Servo Servo2;
+
+int stateMotor1;
+int stateMotor2;
+
 const char* ssid = "WIFIIICT";
 const char* password = "fakatijger";
 String serverName = "http://10.3.41.36//parking.php";
@@ -18,6 +28,10 @@ String Sensor3State = "0";
 String Sensor4State = "0";
 String Sensor5State = "0";
 String Sensor6State = "0";
+
+//sensoren 34 35
+//motoren 16 17
+
 
 const int PIN_RED6 = 13;
 const int PIN_GREEN6 = 12;
@@ -41,6 +55,12 @@ const int PIN_GREEN1 = 18;
 int reading = 0;
 void setup()
 {
+  Servo1.attach(16);
+  pinMode(34, INPUT);
+
+  Servo1.attach(17);
+  pinMode(35, INPUT);
+  
   Wire.begin();               
   Serial.begin(115200);
 
@@ -73,6 +93,25 @@ void setup()
     
 
 void loop(){
+
+  //--------------------------------------------------------------------------------------------Sensor Poort binnen
+
+
+  stateMotor1 = digitalRead(34);
+    if (stateMotor1 == 0){
+      Servo1.write(1);
+    }else if (stateMotor1 == 1){
+      
+      Servo1.write(178);
+    }
+  stateMotor2 = digitalRead(35);
+    if (stateMotor2 == 0){
+      Servo2.write(1);
+    }else if (stateMotor2 == 1){
+      
+      Servo2.write(178);
+    }
+  
 
   //--------------------------------------------------------------------------------------------Sensor 1
 
