@@ -104,6 +104,8 @@ void loop(){
       
       Servo1.write(178);
     }
+ 
+   //--------------------------------------------------------------------------------------------Sensor Poort buiten
   stateMotor2 = digitalRead(35);
     if (stateMotor2 == 0){
       Servo2.write(1);
