@@ -1,4 +1,4 @@
- #include <Wire.h>
+#include <Wire.h>
 #include <WiFi.h>
 #include <HTTPClient.h>
 #include <WiFiClient.h>
@@ -30,7 +30,7 @@ String Sensor5State = "0";
 String Sensor6State = "0";
 
 //sensoren 34 35
-//motoren 16 17
+//motoren 32 33
 
 
 const int PIN_RED6 = 13;
@@ -55,10 +55,10 @@ const int PIN_GREEN1 = 18;
 int reading = 0;
 void setup()
 {
-  Servo1.attach(16);
+  Servo1.attach(32);
   pinMode(34, INPUT);
 
-  Servo1.attach(17);
+  Servo2.attach(33);
   pinMode(35, INPUT);
   
   Wire.begin();               
@@ -94,25 +94,7 @@ void setup()
 
 void loop(){
 
-  //--------------------------------------------------------------------------------------------Sensor Poort binnen
-
-
-  stateMotor1 = digitalRead(34);
-    if (stateMotor1 == 0){
-      Servo1.write(1);
-    }else if (stateMotor1 == 1){
-      
-      Servo1.write(178);
-    }
- 
-   //--------------------------------------------------------------------------------------------Sensor Poort buiten
-  stateMotor2 = digitalRead(35);
-    if (stateMotor2 == 0){
-      Servo2.write(1);
-    }else if (stateMotor2 == 1){
-      
-      Servo2.write(178);
-    }
+  
   
 
   //--------------------------------------------------------------------------------------------Sensor 1
@@ -306,7 +288,33 @@ void loop(){
     }
     Serial.println("");  
 
-    delay(100);
+    //--------------------------------------------------------------------------------------------Motor: Poort binnen
+
+
+    stateMotor1 = digitalRead(34);
+      if (stateMotor1 == 0){
+        if (Sensor1State == "1" and Sensor2State == "1" and Sensor3State == "1" and Sensor4State == "1" and Sensor5State == "1" and Sensor6State == "1"){
+          Serial.println("Alle plaatsen volzet");
+        }else{
+          Servo1.write(15);
+        }
+          
+        
+      }else if (stateMotor1 == 1){
+        
+        Servo1.write(178);
+      }
+      
+    //--------------------------------------------------------------------------------------------Motor: Poort buiten
+    
+    stateMotor2 = digitalRead(35);
+      if (stateMotor2 == 0){
+        Servo2.write(15);
+      }else if (stateMotor2 == 1){
+        
+        Servo2.write(178);
+      }
+
      //-------------------------------------------------------DATA VIA WIFI
 
   
