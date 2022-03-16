@@ -1,4 +1,4 @@
-#include <Wire.h>
+ #include <Wire.h>
 #include <WiFi.h>
 #include <HTTPClient.h>
 #include <WiFiClient.h>
@@ -297,6 +297,7 @@ void loop(){
           Serial.println("Alle plaatsen volzet");
         }else{
           Servo1.write(15);
+          delay(2000);
         }
           
         
@@ -310,6 +311,7 @@ void loop(){
     stateMotor2 = digitalRead(35);
       if (stateMotor2 == 0){
         Servo2.write(15);
+        delay(2000);
       }else if (stateMotor2 == 1){
         
         Servo2.write(178);
