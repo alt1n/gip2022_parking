@@ -1,4 +1,4 @@
-![GIP_Schema drawio](https://user-images.githubusercontent.com/84501094/158830133-c0057e4d-6b6f-4389-982e-f8a9b4aa6c7f.png)
+![GIP_Schema_1 drawio(2)](https://user-images.githubusercontent.com/84501094/158831222-e23954c0-e988-4f7a-a560-1da4e5825a66.png)
 
 
 
