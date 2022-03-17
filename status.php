@@ -1,6 +1,6 @@
 <head><meta http-equiv="refresh" content="1" > </head>
 
-<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="css/main.css">
 <div id="navbar"> 
     <ul> 
 	<li><a href="status.php">Parking Status</a></li> 
@@ -150,4 +150,6 @@
         echo '<h3 style="color:white; background-color: #1f1e1b; display:inline-block; padding:0.5em; font-size:2em;" id="vP">'.(6-$aantal).'</h3>';
     }
     echo "</div>";
+
+    
 ?>
