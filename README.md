@@ -1,6 +1,7 @@
 Schema:
 
-![GIP_Schema_1 drawio(2)](https://user-images.githubusercontent.com/84501094/158831222-e23954c0-e988-4f7a-a560-1da4e5825a66.png)
+![GIP_Schema_1 drawio(3)](https://user-images.githubusercontent.com/84501094/158832059-2c38246a-ee87-4d1b-a5ea-6ecb2f757b86.png)
+
 
 Constructie:
 
