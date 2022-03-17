@@ -1,4 +1,12 @@
+Schema:
+
 ![GIP_Schema_1 drawio(2)](https://user-images.githubusercontent.com/84501094/158831222-e23954c0-e988-4f7a-a560-1da4e5825a66.png)
+
+Constructie:
+
+![20220317_153710](https://user-images.githubusercontent.com/84501094/158831652-27515a12-a5a2-4e21-90e3-08e90cfb2158.jpg)
+
+![20220316_084108](https://user-images.githubusercontent.com/84501094/158831716-e211f728-fa38-4fbd-a081-2fcdf34e6a6c.jpg)
 
 
 
