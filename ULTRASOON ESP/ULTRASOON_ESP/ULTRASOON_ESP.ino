@@ -1,4 +1,5 @@
- #include <Wire.h>
+#include <LiquidCrystal_I2C.h>
+#include <Wire.h>
 #include <WiFi.h>
 #include <HTTPClient.h>
 #include <WiFiClient.h>
@@ -53,8 +54,15 @@ const int PIN_GREEN1 = 18;
 
 
 int reading = 0;
+
+LiquidCrystal_I2C lcd(0x27, 20, 4);
+
 void setup()
 {
+
+  lcd.init();                   
+  lcd.backlight();
+  
   Servo1.attach(32);
   pinMode(34, INPUT);
 
@@ -89,12 +97,12 @@ void setup()
   Serial.println("Timer set to 5 seconds (timerDelay variable), it will take 5 seconds before publishing the first reading.");
 }
 
-    
+int vrijePlaatsen = 0; 
     
 
 void loop(){
 
-  
+  vrijePlaatsen = 0;
   
 
   //--------------------------------------------------------------------------------------------Sensor 1
@@ -122,6 +130,7 @@ void loop(){
           Sensor1State = "0";
           digitalWrite(PIN_RED1, HIGH);
           digitalWrite(PIN_GREEN1, LOW);
+          vrijePlaatsen = vrijePlaatsen + 1;
       }else{
           Sensor1State = "1";
           digitalWrite(PIN_RED1, LOW);
@@ -154,6 +163,7 @@ void loop(){
           Sensor2State = "0";
           digitalWrite(PIN_RED2, HIGH);
           digitalWrite(PIN_GREEN2, LOW);
+          vrijePlaatsen = vrijePlaatsen + 1;
       }else{
           Sensor2State = "1";
           digitalWrite(PIN_RED2, LOW);
@@ -186,6 +196,7 @@ void loop(){
           Sensor3State = "0";
           digitalWrite(PIN_RED3, HIGH);
           digitalWrite(PIN_GREEN3, LOW);
+          vrijePlaatsen = vrijePlaatsen + 1;
       }else{
           Sensor3State = "1";
           digitalWrite(PIN_RED3, LOW);
@@ -218,6 +229,7 @@ void loop(){
           Sensor4State = "0";
           digitalWrite(PIN_RED4, HIGH);
           digitalWrite(PIN_GREEN4, LOW);
+          vrijePlaatsen = vrijePlaatsen + 1;
       }else{
           Sensor4State = "1";
           digitalWrite(PIN_RED4, LOW);
@@ -249,6 +261,7 @@ void loop(){
           Sensor5State = "0";
           digitalWrite(PIN_RED5, HIGH);
           digitalWrite(PIN_GREEN5, LOW);
+          vrijePlaatsen = vrijePlaatsen + 1;
       }else{
           Sensor5State = "1";
           digitalWrite(PIN_RED5, LOW);
@@ -280,6 +293,7 @@ void loop(){
           Sensor6State = "0";
           digitalWrite(PIN_RED6, HIGH);
           digitalWrite(PIN_GREEN6, LOW);
+          vrijePlaatsen = vrijePlaatsen + 1;
       }else{
           Sensor6State = "1";
           digitalWrite(PIN_RED6, LOW);
@@ -297,7 +311,7 @@ void loop(){
           Serial.println("Alle plaatsen volzet");
         }else{
           Servo1.write(15);
-          delay(2000);
+          delay(3000);
         }
           
         
@@ -311,12 +325,24 @@ void loop(){
     stateMotor2 = digitalRead(35);
       if (stateMotor2 == 0){
         Servo2.write(15);
-        delay(2000);
+        delay(3000);
       }else if (stateMotor2 == 1){
         
         Servo2.write(178);
       }
 
+      //--------------------------------------------------------------------------------------------LCD 20x4
+
+      lcd.clear();
+      lcd.setCursor(0, 0);
+      lcd.print("Ingang Smart Parking");
+      lcd.setCursor(0,1);
+      lcd.print("Vrije plaatsen:  ");
+      lcd.print(vrijePlaatsen);
+      lcd.setCursor(0,2);
+      lcd.print("   Gemaakt door :");
+      lcd.setCursor(0,3);
+      lcd.print("   Altin en Kenji");
      //-------------------------------------------------------DATA VIA WIFI
 
   
