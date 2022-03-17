@@ -4,11 +4,17 @@
 i2c adress scan: 
 
 I2C device found at address hex: 0x7A dec: 122 (Parking 1)
+
 I2C device found at address hex: 0x70 dec: 112 (Parking 2)
+
 I2C device found at address hex: 0x7B dec: 123 (Parking 3)
+
 I2C device found at address hex: 0x72 dec: 114 (Parking 4)
+
 I2C device found at address hex: 0x78 dec: 120 (Parking 5)
+
 I2C device found at address hex: 0x79 dec: 121 (Parking 6)
+
 I2C device found at address hex: 0x27 dec: 39 (20x4 LCD)
 
 Links:
