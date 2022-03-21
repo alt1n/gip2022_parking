@@ -1,3 +1,8 @@
+Voorbeelden van smart parking:
+https://www.youtube.com/watch?v=-9s9QkpRzWs
+https://www.youtube.com/watch?v=dZ57WLIyS04
+
+
 Schema:
 
 ![GIP_Schema_1 drawio(3)](https://user-images.githubusercontent.com/84501094/158832059-2c38246a-ee87-4d1b-a5ea-6ecb2f757b86.png)
