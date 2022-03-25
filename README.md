@@ -45,6 +45,8 @@ Links:
 Hardware:
 
 Ultrasoon sensor:
+https://www.robot-electronics.co.uk/htm/srf02techI2C.htm
+
 https://www.datasheet4u.com/datasheet-pdf/ETC/SRF02/pdf.php?id=625578
 
 Uitleg i2c:
