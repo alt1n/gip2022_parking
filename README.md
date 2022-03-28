@@ -40,6 +40,22 @@ I2C device found at address hex: 0x79 dec: 121 (Parking 6)
 
 I2C device found at address hex: 0x27 dec: 39 (20x4 LCD)
 
+Bibliografie:
+
+Interface Chips, "Easy I2C: Introduction to I2C", https://www.youtube.com/watch?v=qeJN_80CiMU
+
+Lastminuteengineers, "Interface an I2C LCD with Arduino", https://lastminuteengineers.com/i2c-lcd-arduino-tutorial/
+
+Robtillaart, "MultiSpeed I2C Scanner - 50,100,200,400 KHz.", https://forum.arduino.cc/t/multispeed-i2c-scanner-50-100-200-400-khz/192325
+
+Santos, Sara, "ESP32/ESP8266 Insert Data into MySQL Database using PHP and Arduino IDE", https://randomnerdtutorials.com/esp32-esp8266-mysql-database-php/
+
+Campbell, Scott, "Basics of the I2C Communication Protocol", https://www.circuitbasics.com/basics-of-the-i2c-communication-protocol/
+
+Sunfounder, "E18-D80NK Infrared Photoelectric Switch Sensor", http://wiki.sunfounder.cc/index.php?title=E18-D80NK_Infrared_Photoelectric_Switch_Sensor
+
+w3schools, "PHP MySQL Select Data", https://www.w3schools.com/php/php_mysql_select.asp
+
 Links:
 
 Hardware:
