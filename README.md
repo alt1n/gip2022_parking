@@ -118,6 +118,6 @@ CSS (Cascading Style Sheets) wordt gebruikt om webpagina's op te maken en op te 
 
 
 Arduino IDE: 
-Arduino IDE is a special software running on your system that allows you to write sketches (synonym for program in Arduino language) for different Arduino boards. The Arduino programming language is based on a very simple hardware programming language called processing, which is similar to the C language. 
+Arduino IDE is speciale software die op uw systeem draait en waarmee u schetsen (synoniem voor programma in Arduino-taal) kunt schrijven voor verschillende Arduino-kaarten. De Arduino-programmeertaal is gebaseerd op een zeer eenvoudige hardware-programmeertaal genaamd processing, die vergelijkbaar is met de C-taal.
 
 
