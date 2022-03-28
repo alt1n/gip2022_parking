@@ -117,6 +117,7 @@ CSS:
 CSS (Cascading Style Sheets) wordt gebruikt om webpagina's op te maken en op te maken, bijvoorbeeld om het lettertype, de kleur, de grootte en de spatiëring van uw inhoud te wijzigen, deze in meerdere kolommen te splitsen of animaties en andere decoratieve elementen toe te voegen.
 
 
-
+Arduino IDE: 
+Arduino IDE is a special software running on your system that allows you to write sketches (synonym for program in Arduino language) for different Arduino boards. The Arduino programming language is based on a very simple hardware programming language called processing, which is similar to the C language. 
 
 
