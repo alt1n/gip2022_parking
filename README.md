@@ -11,7 +11,7 @@ Schema:
 
 Fishke:
 
-![fishkeParking](https://user-images.githubusercontent.com/84501094/158832319-4afd6257-bcdc-4431-abed-bd7021ca2bfe.png)
+![afficheA3](https://user-images.githubusercontent.com/84501094/160782711-9564a1ec-d0d3-4059-baf9-ccc0a74341c6.png)
 
 
 Constructie:
