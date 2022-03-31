@@ -18,11 +18,6 @@ Constructie:
 
 ![Screenshot_1](https://user-images.githubusercontent.com/84501094/159648242-1bc935f7-010b-4e95-8e65-6d71c42076b8.png)
 
-![20220317_153710](https://user-images.githubusercontent.com/84501094/158831652-27515a12-a5a2-4e21-90e3-08e90cfb2158.jpg)
-
-![20220316_084108](https://user-images.githubusercontent.com/84501094/158831716-e211f728-fa38-4fbd-a081-2fcdf34e6a6c.jpg)
-
-
 
 i2c adress scan: 
 
