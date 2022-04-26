@@ -1,9 +1,16 @@
-
 body{
 	color: white;
     font-family: sans-serif;
     background-color: #302c2c;
+	
 }
+.Alles{
+	display: grid;
+	align-items: center;
+  	justify-content: center;
+	
+}
+
 h1{
 	text-align:center;
 	font-size: 3em;
@@ -11,29 +18,28 @@ h1{
 	
 }
 
-table{
-	border: 0em solid white;
-	margin-left: auto;
-	margin-right: auto;
-	text-align:	center;
-	font-size: 2.50em;
-	border-collapse: separate;
-	border-spacing: 50px 0;
-	color: white;
+.ParkingPlaatsen{
+	transform: translate(0px, 29px);
+	margin-left: 1.60em;
 }
 
-td{
-	border: 0.123em solid white;
-	padding: 2.9em 1.9em 2.9em 1.9em;
+.vrije{
+	margin-top: 20px;
+	text-align: center;
+}
+.Parking1, .Parking2, .Parking3, .Parking4, .Parking5, .Parking6{
+	text-align: center;
+	font-size: 2.36em;
+	width: 10em;
+    padding: 2.2em 1em 2.5em 1em;
+    float: left;
+	border: 0.069em solid white;
+	
 }
 
 
-.linksC{
-	text-align:center;
-	color: white;
-    margin-right: 2em;
-    padding: 1em;
-}
+
+
 
 #navbar ul { 
 	
@@ -43,7 +49,7 @@ td{
 	list-style-type: none; 
 	font-size: 2.5em;
 	background-color: #1f1e1b; 
-	} 
+} 
  
 #navbar ul li {  
 	
